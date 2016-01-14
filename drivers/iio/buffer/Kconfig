@@ -10,7 +10,7 @@ config IIO_BUFFER_CB
 	  usage.  That is, those where the data is pushed to the consumer.
 
 config IIO_BUFFER_DMA
-	tristate
+	tristate "Add support for DMA"
 	help
 	  Provides the generic IIO DMA buffer infrastructure that can be used by
 	  drivers for devices with DMA support to implement the IIO buffer.
@@ -19,7 +19,7 @@ config IIO_BUFFER_DMA
 	  infrastructure.
 
 config IIO_BUFFER_DMAENGINE
-	tristate
+	tristate "Add support for DMA Engine"
 	select IIO_BUFFER_DMA
 	help
 	  Provides a bonding of the generic IIO DMA buffer infrastructure with the
@@ -37,7 +37,7 @@ config IIO_KFIFO_BUF
 	  often to read from the buffer.
 
 config IIO_TRIGGERED_BUFFER
-	tristate
+	tristate "Add support for triggered buffer"
 	select IIO_TRIGGER
 	select IIO_KFIFO_BUF
 	help
