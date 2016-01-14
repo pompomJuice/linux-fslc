@@ -73,7 +73,7 @@ config AMCC_PPC440SPE_ADMA
 	select ARCH_HAS_ASYNC_TX_FIND_CHANNEL
 	select ASYNC_TX_ENABLE_CHANNEL_SWITCH
 	help
-	  Enable support for the Intel(R) IOP Series RAID engines.
+	  Enable support for the AMCC PPC440SPe RAID engines.
 
 config IDMA64
 	tristate "Intel integrated DMA 64-bit support"
@@ -84,7 +84,6 @@ config IDMA64
 	  Intel Skylake PCH.
 
 source "drivers/dma/dw/Kconfig"
-	  Enable support for the AMCC PPC440SPe RAID engines.
 
 config AT_HDMAC
 	tristate "Atmel AHB DMA support"
